@@ -1,4 +1,4 @@
-def list_create():
+ def list_create():
     li = list(range(1, 11))
     return li
 
@@ -31,3 +31,13 @@ def avg_num():
     return avg
     
 print(avg_num())
+
+def split_avg():
+    list_create()
+    total = 0
+    for num in range(len(list_create())//2, len(list_create())):
+        total += list_create()[num]
+        avg = total/(len(list_create())//2)
+    return avg
+
+print(split_avg())
